@@ -540,8 +540,15 @@ thead {
 /***************************************/
 
 /* Naked Embeds */
-.markdown-embed-title { display: none; }
-.markdown-embed:hover > .markdown-embed-title { display: block; position: absolute}
+.markdown-embed-title {
+  opacity: 0%;
+  position: absolute;
+}
+
+.markdown-embed:hover > .markdown-embed-title {
+  opacity: 100%;
+  transition: opacity .25s ease-in-out;
+}
 .markdown-preview-view .markdown-embed-content>:first-child { margin-top: 0; }
 .markdown-preview-view .markdown-embed-content>:last-child { margin-bottom: 0; }
 /*remove the following two line, you will get border and scroll*/
@@ -557,14 +564,17 @@ thead {
 }
 
 .markdown-preview-view .markdown-embed:hover {
-    background: #4c3342;
+    background: hsl(324 20% 20% / 1);
+    transition: background .25s ease-in-out;
 }
 .markdown-embed:hover .markdown-embed-link {
   color: var(--text-accent) !important;
+  transition: color .25s ease-in-out;
 }
 
 .markdown-embed-title, .file-embed-title {
     font-size: 19px;
+    line-height: 19px;
     top: 5px;
     left: 0;
     right: 0;
@@ -591,8 +601,8 @@ thead {
   right: 8px;
 }
 
-.markdown-embed-link:hover {
-color: var(--text-accent) !important;
+.markdown-embed:hover .markdown-embed-link:hover {
+  color: var(--text-accent-hover) !important;
 }
 
 /***************************************/
