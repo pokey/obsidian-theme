@@ -556,11 +556,9 @@ thead {
 .markdown-preview-view .markdown-embed {
     border: none;
     background: #1b1318;
-    padding: 0;
-    margin: 0;
+    padding: 5px;
+    margin: -5px;
     border-radius: 5px;
-    padding-left: 5px;
-    margin-left: -5px;
 }
 
 .markdown-preview-view .markdown-embed:hover {
@@ -604,6 +602,15 @@ thead {
 .markdown-embed:hover .markdown-embed-link:hover {
   color: var(--text-accent-hover) !important;
 }
+
+.markdown-preview-view .markdown-embed-content p:first-child {
+  margin-top: 18px;
+}
+
+.markdown-preview-view .markdown-embed-content .markdown-preview-section:last-child ul {
+  margin-bottom: 0px;
+}
+
 
 /***************************************/
 /*             graph view              */
