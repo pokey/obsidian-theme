@@ -203,6 +203,10 @@ a,
   text-decoration: none !important;
 }
 
+.cm-s-obsidian span.cm-url {
+  color: var(--text-accent);
+}
+
 /* the url string in editor */
 .cm-s-obsidian span.cm-string{
   color: var(--text-accent-hover) !important;
@@ -900,7 +904,7 @@ code {
 }
 
 .CodeMirror-activeline {
-    filter: saturate(1.175) brightness(1.175);
+    filter: saturate(1.2) brightness(1.2);
 }
 
 .search-result-file-matched-text {
