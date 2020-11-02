@@ -557,8 +557,9 @@ thead {
     border: none;
     background: #1b1318;
     padding: 5px;
-    margin: -5px;
+    margin: -6px;
     border-radius: 5px;
+    border: 1px solid hsl(322 40% 16% / 1);
 }
 
 .markdown-preview-view .markdown-embed:hover {
@@ -607,8 +608,12 @@ thead {
   margin-top: 18px;
 }
 
-.markdown-preview-view .markdown-embed-content .markdown-preview-section:last-child ul {
+.markdown-preview-view .markdown-embed-content .markdown-preview-section:last-of-type > * {
   margin-bottom: 0px;
+}
+
+.markdown-embed .markdown-preview-view .markdown-preview-pusher + .markdown-preview-section p {
+  margin-top: 0px;
 }
 
 
