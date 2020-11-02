@@ -13,6 +13,6 @@ Installation
 
 Credits
 =======
-Based on [Dracula theme](https://draculatheme.com/obsidian)
+Forked from [Dracula theme](https://draculatheme.com/obsidian)
 
 Bulk of design work done during session with [Matthew Tierney](https://matttierney.com/)
