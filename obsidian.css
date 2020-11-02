@@ -612,8 +612,12 @@ thead {
   margin-bottom: 0px;
 }
 
-.markdown-embed .markdown-preview-view .markdown-preview-pusher + .markdown-preview-section p {
+.markdown-embed .markdown-preview-view .markdown-preview-pusher + .markdown-preview-section * {
   margin-top: 0px;
+}
+
+.markdown-embed .markdown-preview-view .markdown-preview-sizer {
+  min-height: 0px !important;
 }
 
 
