@@ -37,7 +37,7 @@
   --text-normal: #E3D3C4;
   --text-muted: #f8f8f2;
   --text-faint: #a57f97;
-  --text-highlight-bg: #a05006;
+  --text-highlight-bg: #6fd498;
   --text-error: #ff79c6;
   --text-error-hover: #ff79c6;
   --text-selection: #6272a4;
@@ -901,4 +901,13 @@ code {
 
 .CodeMirror-activeline {
     filter: saturate(1.175) brightness(1.175);
+}
+
+.search-result-file-matched-text {
+  color: var(--text-accent);
+  background-color: inherit;
+}
+.search-result-file-matched-text:hover {
+  color: var(--text-accent-hover);
+  background-color: inherit;
 }
