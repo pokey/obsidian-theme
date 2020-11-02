@@ -261,6 +261,7 @@ a:not(.internal-link) {
   font-size: var(--font-size-normal);
   padding-left: 2% !important;
   padding-right: 1% !important;
+  padding-top: 30px;
 }
 
 /* bold in preview and editor */
@@ -608,11 +609,11 @@ thead {
   margin-top: 18px;
 }
 
-.markdown-preview-view .markdown-embed-content .markdown-preview-section:last-of-type > * {
+.markdown-preview-view .markdown-preview-section:last-of-type > * {
   margin-bottom: 0px;
 }
 
-.markdown-embed .markdown-preview-view .markdown-preview-pusher + .markdown-preview-section * {
+.markdown-preview-view .markdown-preview-pusher + .markdown-preview-section > * {
   margin-top: 0px;
 }
 
