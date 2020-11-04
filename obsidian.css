@@ -614,7 +614,7 @@ thead {
 }
 
 .markdown-preview-view .markdown-preview-pusher + .markdown-preview-section > * {
-  margin-top: 0px;
+  margin-top: 0px !important;
 }
 
 .markdown-embed .markdown-preview-view .markdown-preview-sizer {
