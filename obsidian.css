@@ -532,6 +532,10 @@ thead {
   height: auto;
 }
 
+.popover.hover-popover .markdown-embed .markdown-embed-link {
+  top: 0px;
+  right: 0px;
+}
 
 /***************************************/
 /*            Side panel               */
