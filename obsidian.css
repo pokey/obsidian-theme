@@ -290,6 +290,7 @@ s, .cm-strikethrough {
 /* horizontal line in preview */
 .markdown-preview-view hr {
   background-color: var(--text-faint) !important;
+  border-top-width: 1px;
 }
 
 /* embedded images */
