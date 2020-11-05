@@ -623,7 +623,9 @@ thead {
     margin-left: 0px;
     margin-right: 0px;
 }
-
+.markdown-preview-view .markdown-embed-content > .markdown-preview-view {
+  max-height: none;
+}
 .markdown-preview-view .markdown-embed:hover {
     background: var(--background-embed-hover);
     transition: background .25s ease-in-out;
