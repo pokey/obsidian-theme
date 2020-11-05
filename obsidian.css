@@ -934,3 +934,7 @@ code {
   color: var(--text-accent-hover);
   background-color: inherit;
 }
+
+.suggestion-container {
+  overflow: hidden;
+}
