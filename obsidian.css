@@ -50,7 +50,7 @@
   --interactive-accent-rgb: 123, 108, 217;
   --interactive-accent-hover: #ff5555;
   --scrollbar-active-thumb-bg: #282a36;
-  --scrollbar-bg: #282a36;
+  --scrollbar-bg: var(--background-primary);
   --scrollbar-thumb-bg: #282a36;
   --text-title: #d297bc;
   --inline-code: #bd93f9;
@@ -136,11 +136,13 @@
 }
 
 .workspace-ribbon.mod-left.is-collapsed{
-  border-right: 1px solid var(--border-color);
+  border: none;
+  border-right: 1px solid var(--background-primary);
 }
 
 .workspace-ribbon.mod-right.is-collapsed{
-  border-left: 1px solid var(--border-color);
+  border: none;
+  border-left: 1px solid var(--background-primary);
 }
 
 /*************************************/
@@ -608,7 +610,6 @@ thead {
 }
 .markdown-preview-view .markdown-embed-content>:first-child { margin-top: 0; }
 .markdown-preview-view .markdown-embed-content>:last-child { margin-bottom: 0; }
-/*remove the following two line, you will get border and scroll*/
 
 .markdown-preview-view .markdown-embed {
     border: none;
