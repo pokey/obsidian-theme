@@ -938,3 +938,12 @@ code {
 .suggestion-container {
   overflow: hidden;
 }
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.5em;
+}
+sub {
+  top: 0.4em;
+}
