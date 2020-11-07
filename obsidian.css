@@ -22,7 +22,7 @@
   --background-embed-hover: hsl(324 20% 20% / 1);
   --background-primary: #07010a;
   --background-primary-alt: #44475a;
-  --background-secondary: #44475a;
+  --background-secondary: #1d1023;
   --background-secondary-alt: #000000;
   --background-accent: #f8f8f2;
   --background-modifier-border: #6fd498;
@@ -111,7 +111,7 @@
 
 /*workspace ribbon when collapsed*/
 .workspace-ribbon.is-collapsed {
-  background-color: var(--background-primary-alt);
+  background-color: var(--background-secondary);
 }
 
 /*the vertical split*/
@@ -149,37 +149,31 @@
 /*                tags               */
 /*************************************/
 
-/* Tag hover in preview */
-a.tag:hover {
-  color: var(--text-accent) !important;
-}
-
 /* Tag Color in editor and preview*/
 .cm-hashtag, a.tag {
-  color: var(--text-accent-hover) !important;
+  color: var(--text-accent);
   text-decoration: none !important;
   font-style: normal !important;
 }
 
 /* ====== Tag Pills ======== */
 .tag:not(.token) {
-	background-color: var(--background-secondary);
+	background-color: #412250;
 	border: none;
-	color: white;
 	font-size: 11px;
-	padding: 1px 8px;
+    padding: 0px 5px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	margin: 0px 0px;
 	cursor: pointer;
-	border-radius: 8px;
-    line-height: 2.2em;
+    border-radius: 5px;
+    line-height: 2em;
     vertical-align: middle;
 }
 .tag:not(.token):hover {
-	color: white;
-	background-color: var(--text-accent-hover);
+	color: var(--text-accent-hover);
+	background-color: #6d3986;
 }
 .tag[href^="#obsidian"] {
 	background-color: #4d3ca6;
