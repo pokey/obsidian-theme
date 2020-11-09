@@ -467,17 +467,22 @@ pre code {
 /*             table                   */
 /***************************************/
 
-th {
-  font-weight: 800 !important;
+.markdown-preview-view th, .markdown-preview-view td {
+  border-color: #274e37;
 }
 
 .markdown-preview-view th {
-    font-weight: 800;
-    background-color: var(--background-secondary) !important;
+  font-weight: 500;
+  color: var(--text-title);
+  background-color: var(--background-secondary) !important;
 }
 
 thead {
-  border-bottom: 3px solid var(--background-modifier-border);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.markdown-preview-view table {
+    margin-block-start: 1em;
 }
 
 .table {
