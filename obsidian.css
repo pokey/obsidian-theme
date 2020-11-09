@@ -150,7 +150,9 @@
 /*************************************/
 
 /* Tag Color in editor and preview*/
-.cm-hashtag, a.tag {
+.cm-s-obsidian span.cm-hashtag,
+.cm-s-obsidian span.cm-hashtag.cm-quote,
+a.tag {
   color: var(--text-accent);
   text-decoration: none !important;
   font-style: normal !important;
@@ -424,8 +426,8 @@ pre code {
 /***************************************/
 
 /* for editor */
-.cm-quote {
-  color: var(--text-normal) !important;
+.cm-s-obsidian span.cm-quote {
+  color: var(--text-normal);
   font-style: italic;
 }
 
@@ -438,7 +440,6 @@ pre code {
   border-radius: 0 8px 8px 0;
   line-height: 1.5em;
   margin: 1em 10px;
-  font-style: italic;
 }
 
 .markdown-preview-view blockquote p {
