@@ -502,7 +502,9 @@ thead {
 .markdown-preview-view .task-list-item-checkbox:checked::before {
   content: '✓';
   position: absolute;
-  color: var(--text-accent);
+  left: -1.5px;
+  top: -1.5px;
+  color: var(--text-normal);
   font-size:1em;
   line-height: 1.25em;
   width:1.2em;
@@ -512,15 +514,12 @@ thead {
 
 .markdown-preview-view .task-list-item-checkbox {
   -webkit-appearance: none;
-  top: 0.2em !important;
-  right: 4px;
+  top: 0.175em !important;
+  right: 6px;
   box-sizing: border-box;
-  border: 1px solid  var(--text-muted);
+  border: 1px solid var(--text-normal);
   position: relative;
-  width: 1.25em;
-  height: 1.25em;
   margin: 0;
-  box-shadow: 0 0 0.1em var(--text-muted);
 }
 
 .checkbox-container {
