@@ -14,7 +14,7 @@
     --font-family-editor:            SF Mono, Avenir Next, sans-serif;
     --font-monospace:                SF Mono, Avenir Next, sans-serif;
     --font-family-preview:           SF Pro Medium, Avenir Next, sans-serif;
-    --font-weight-header:            400;
+    --font-family-header:            SF Pro Semibold, Avenir Next, sans-serif;
 }
 
 .theme-light,
@@ -312,7 +312,7 @@ img:hover {
 /* headings for editor and preview */
 .CodeMirror pre.HyperMD-header-1, .markdown-preview-view h1
 {
-  font-weight: var(--font-weight-header);
+  font-family: var(--font-family-header);
   font-size: var(--font-size-h1);
   color: var(--text-title);
 }
@@ -323,7 +323,7 @@ img:hover {
 
 .CodeMirror pre.HyperMD-header-2, .markdown-preview-view h2
 {
-  font-weight: var(--font-weight-header);
+  font-family: var(--font-family-header);
   font-size: var(--font-size-h2);
   color: var(--text-title);
 }
@@ -334,7 +334,7 @@ img:hover {
 
 .CodeMirror pre.HyperMD-header-3, .markdown-preview-view h3
 {
-  font-weight: var(--font-weight-header);
+  font-family: var(--font-family-header);
   font-size: var(--font-size-h3);
   color: var(--text-title);
 }
@@ -345,7 +345,7 @@ img:hover {
 
 .CodeMirror pre.HyperMD-header-4, .markdown-preview-view h4
 {
-  font-weight: var(--font-weight-header);
+  font-family: var(--font-family-header);
   font-size: var(--font-size-h4);
   color: var(--text-title);
 }
@@ -356,7 +356,7 @@ img:hover {
 
 .CodeMirror pre.HyperMD-header-5, .markdown-preview-view h5
 {
-  font-weight: var(--font-weight-header);
+  font-family: var(--font-family-header);
   font-size: var(--font-size-h5);
   color: var(--text-title);
 }
@@ -367,7 +367,7 @@ img:hover {
 
 .CodeMirror pre.HyperMD-header-6, .markdown-preview-view h6
 {
-  font-weight: var(--font-weight-header);
+  font-family: var(--font-family-header);
   font-size: var(--font-size-h6);
   color: var(--text-title);
 }
@@ -469,7 +469,7 @@ pre code {
 }
 
 .markdown-preview-view th {
-  font-weight: var(--font-weight-header);
+  font-family: var(--font-family-header);
   color: var(--text-title);
   background-color: var(--pre-code) !important;
 }
@@ -640,7 +640,7 @@ thead {
     right: 0;
     width: 100%;
     text-align: center;
-    font-weight: var(--font-weight-header);
+    font-family: var(--font-family-header);
     color: var(--text-accent);
 }
 
@@ -869,7 +869,7 @@ ul .markdown-preview-view ul ul {
   font-size: var(--font-size-code) !important;
   display: block;
   color: var(--code-block) !important;
-  font-weight: var(--font-weight-header);
+  font-family: var(--font-family-header);
 }
 
 /*remove the border of codeblock in editor */
