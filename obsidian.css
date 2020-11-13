@@ -20,12 +20,12 @@
 .theme-dark {
   --background-embed: #c799b61c;
   --background-embed-hover: hsl(324 20% 20% / 1);
-  --background-primary: #07010a;
+  --background-primary: #0A0A09;
   --background-primary-alt: #44475a;
   --background-secondary: #1d1023;
   --background-secondary-alt: #000000;
   --background-accent: #f8f8f2;
-  --background-modifier-border: #6fd498;
+  --background-modifier-border: #081D16;
   --background-modifier-form-field: rgba(0, 0, 0, 0.2);
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
@@ -34,9 +34,10 @@
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: #470000;
   --background-modifier-cover: rgba(0, 0, 0, 0.6);
-  --text-accent: #6fd498;
+  --text-accent: #73CFAB;
   --text-accent-hover: #8be9fd;
-  --text-normal: #E3D3C4;
+  --text-normal: #E0C2BD;
+  --text-unresolved-link: #398F6E;
   --text-muted: #f8f8f2;
   --text-faint: #a57f97;
   --text-highlight-bg: #2e5a40;
@@ -46,17 +47,17 @@
   --text-on-accent: #bd93f9;
   --interactive-normal: #ffb86c;
   --interactive-hover: #ff5555;
-  --interactive-accent: #244632;
+  --interactive-accent: #0D2B20;
   --interactive-accent-rgb: 123, 108, 217;
   --interactive-accent-hover: #ff5555;
   --scrollbar-active-thumb-bg: #282a36;
   --scrollbar-bg: var(--background-primary);
   --scrollbar-thumb-bg: #282a36;
-  --text-title: #d297bc;
-  --inline-code: #bd93f9;
+  --text-title: #FFA999;
+  --inline-code: var(--text-title);
   --code-block: #8be9fd;
-  --pre-code: #121b15;
-  --blockquote-border: #6fd498;
+  --pre-code: #131217;
+  --blockquote-border: var(--text-accent);
   --vim-cursor: #ff5555;
   --border-color: #2b2727;
 }
@@ -160,7 +161,7 @@ a.tag {
 
 /* ====== Tag Pills ======== */
 .tag:not(.token) {
-	background-color: #412250;
+	background-color: #271836;
 	border: none;
 	font-size: 11px;
     padding: 0px 5px;
@@ -474,7 +475,7 @@ pre code {
 .markdown-preview-view th {
   font-weight: 500;
   color: var(--text-title);
-  background-color: var(--background-secondary) !important;
+  background-color: var(--pre-code) !important;
 }
 
 thead {
@@ -797,7 +798,7 @@ thead {
 .workspace-leaf.mod-active .view-header-title,
 .workspace-leaf.mod-active .view-header-icon
 {
-  color: var(--background-modifier-border);
+  color: var(--text-accent);
 }
 
 .view-header-title, .view-header-icon, .view-action{
@@ -886,7 +887,8 @@ ul .markdown-preview-view ul ul {
 } */
 
 /* in-line block for preview */
-code {
+.markdown-preview-view code {
+  background-color: #52465E;
   color: var(--inline-code) !important;
   bottom: 0px !important;
 }
@@ -960,4 +962,13 @@ sub {
 .mermaid > svg {
   margin-left: auto;
   margin-right: auto;
+}
+
+.markdown-preview-view .internal-link.is-unresolved {
+  opacity: 1;
+  color: var(--text-unresolved-link);
+}
+
+.markdown-preview-view code {
+  background-color: #52465E;
 }
