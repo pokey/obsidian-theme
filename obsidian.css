@@ -13,7 +13,8 @@
     --font-size-h6:                  18px;
     --font-family-editor:            SF Mono, Avenir Next, sans-serif;
     --font-monospace:                SF Mono, Avenir Next, sans-serif;
-    --font-family-preview:           SF Pro Display, Avenir Next, sans-serif;
+    --font-family-preview:           SF Pro Medium, Avenir Next, sans-serif;
+    --font-weight-header:            400;
 }
 
 .theme-light,
@@ -267,8 +268,8 @@ a:not(.internal-link) {
 
 /* bold in preview and editor */
 strong, .cm-strong {
-  font-weight: 600;
-  color: #50fa7b;
+  font-weight: 500;
+  color: var(--text-title);
 }
 
 /* emphasis in preview and editor */
@@ -316,7 +317,7 @@ img:hover {
 /* headings for editor and preview */
 .CodeMirror pre.HyperMD-header-1, .markdown-preview-view h1
 {
-  font-weight: 500;
+  font-weight: var(--font-weight-header);
   font-size: var(--font-size-h1);
   color: var(--text-title);
 }
@@ -327,7 +328,7 @@ img:hover {
 
 .CodeMirror pre.HyperMD-header-2, .markdown-preview-view h2
 {
-  font-weight: 500;
+  font-weight: var(--font-weight-header);
   font-size: var(--font-size-h2);
   color: var(--text-title);
 }
@@ -338,7 +339,7 @@ img:hover {
 
 .CodeMirror pre.HyperMD-header-3, .markdown-preview-view h3
 {
-  font-weight: 500;
+  font-weight: var(--font-weight-header);
   font-size: var(--font-size-h3);
   color: var(--text-title);
 }
@@ -349,7 +350,7 @@ img:hover {
 
 .CodeMirror pre.HyperMD-header-4, .markdown-preview-view h4
 {
-  font-weight: 500;
+  font-weight: var(--font-weight-header);
   font-size: var(--font-size-h4);
   color: var(--text-title);
 }
@@ -360,7 +361,7 @@ img:hover {
 
 .CodeMirror pre.HyperMD-header-5, .markdown-preview-view h5
 {
-  font-weight: 500;
+  font-weight: var(--font-weight-header);
   font-size: var(--font-size-h5);
   color: var(--text-title);
 }
@@ -371,7 +372,7 @@ img:hover {
 
 .CodeMirror pre.HyperMD-header-6, .markdown-preview-view h6
 {
-  font-weight: 500;
+  font-weight: var(--font-weight-header);
   font-size: var(--font-size-h6);
   color: var(--text-title);
 }
@@ -473,7 +474,7 @@ pre code {
 }
 
 .markdown-preview-view th {
-  font-weight: 500;
+  font-weight: var(--font-weight-header);
   color: var(--text-title);
   background-color: var(--pre-code) !important;
 }
@@ -644,7 +645,7 @@ thead {
     right: 0;
     width: 100%;
     text-align: center;
-    font-weight: 500;
+    font-weight: var(--font-weight-header);
     color: var(--text-accent);
 }
 
@@ -873,7 +874,7 @@ ul .markdown-preview-view ul ul {
   font-size: var(--font-size-code) !important;
   display: block;
   color: var(--code-block) !important;
-  font-weight: 500;
+  font-weight: var(--font-weight-header);
 }
 
 /*remove the border of codeblock in editor */
@@ -971,4 +972,8 @@ sub {
 
 .markdown-preview-view code {
   background-color: #52465E;
+}
+
+.markdown-preview-view .collapse-indicator {
+  color: var(--text-normal);
 }
