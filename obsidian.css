@@ -263,7 +263,7 @@ a,
 
 /* bold in preview and editor */
 strong, .cm-strong {
-  font-weight: 500;
+  font-family: var(--font-family-header);
   color: var(--text-title);
 }
 
