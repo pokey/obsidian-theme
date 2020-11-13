@@ -19,7 +19,7 @@
 
 .theme-light,
 .theme-dark {
-  --background-embed: #c799b61c;
+  --background-embed: hsl(252 26% 24% / 0.21);
   --background-embed-hover: hsl(324 20% 20% / 1);
   --background-primary: #0A0A09;
   --background-primary-alt: #44475a;
@@ -57,7 +57,7 @@
   --text-title: #FFA999;
   --inline-code: var(--text-title);
   --code-block: #8be9fd;
-  --pre-code: #131217;
+  --pre-code: var(--background-embed);
   --blockquote-border: var(--text-accent);
   --vim-cursor: #ff5555;
   --border-color: #2b2727;
@@ -212,11 +212,6 @@ a,
 /* the url string in editor */
 .cm-s-obsidian span.cm-string{
   color: var(--text-accent-hover) !important;
-}
-
-/* make external links italics to differentiate */
-a:not(.internal-link) {
-  font-style: italic;
 }
 
 /*footnote*/
