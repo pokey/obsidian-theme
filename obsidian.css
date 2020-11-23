@@ -499,6 +499,9 @@ thead {
 /***************************************/
 /*               Checkbox              */
 /***************************************/
+.markdown-preview-view ul > li.task-list-item {
+  text-indent: -0.8em;
+}
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {
   content: '✓';
