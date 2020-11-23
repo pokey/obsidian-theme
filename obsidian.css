@@ -524,6 +524,11 @@ thead {
   border: 1px solid var(--text-normal);
   position: relative;
   margin: 0;
+  cursor: pointer;
+}
+
+.markdown-preview-view .task-list-item-checkbox:hover {
+    background-color: var(--text-accent-hover);
 }
 
 .checkbox-container {
