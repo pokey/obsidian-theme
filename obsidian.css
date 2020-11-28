@@ -975,10 +975,6 @@ sub {
   color: var(--text-accent-hover);
 }
 
-.markdown-preview-view code {
-  background-color: #52465E;
-}
-
 .markdown-preview-view .collapse-indicator {
   color: var(--text-normal);
 }
