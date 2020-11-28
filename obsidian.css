@@ -398,12 +398,6 @@ pre code {
   padding: 0px !important;
 }
 
-/* font-size of in-line block for preview */
-.markdown-preview-view code
-{
-  font-size: var(--font-size-code);
-}
-
 
 /* remove the shadow that typically affect light mode */
 .theme-dark code[class*="language-"],
@@ -896,7 +890,7 @@ ul .markdown-preview-view ul ul {
 
 /* in-line block for preview */
 .markdown-preview-view code {
-  background-color: #52465E;
+  background-color: var(--background-embed-hover);
   color: var(--inline-code) !important;
   bottom: 0px !important;
 }
