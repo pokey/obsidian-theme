@@ -314,7 +314,7 @@ img:hover {
 
 
 /* headings for editor and preview */
-.CodeMirror pre.HyperMD-header-1, .markdown-preview-view h1
+.CodeMirror pre.cm-header-1, .markdown-preview-view h1
 {
   font-family: var(--font-family-header);
   font-size: var(--font-size-h1);
@@ -325,7 +325,7 @@ img:hover {
   margin-bottom: -0.3em;
 }
 
-.CodeMirror pre.HyperMD-header-2, .markdown-preview-view h2
+.CodeMirror pre.cm-header-2, .markdown-preview-view h2
 {
   font-family: var(--font-family-header);
   font-size: var(--font-size-h2);
@@ -336,7 +336,7 @@ img:hover {
   margin-top: 1em;
 }
 
-.CodeMirror pre.HyperMD-header-3, .markdown-preview-view h3
+.CodeMirror pre.cm-header-3, .markdown-preview-view h3
 {
   font-family: var(--font-family-header);
   font-size: var(--font-size-h3);
@@ -347,7 +347,7 @@ img:hover {
   margin-top: 0.9em;
 }
 
-.CodeMirror pre.HyperMD-header-4, .markdown-preview-view h4
+.CodeMirror pre.cm-header-4, .markdown-preview-view h4
 {
   font-family: var(--font-family-header);
   font-size: var(--font-size-h4);
@@ -358,7 +358,7 @@ img:hover {
   margin-top: 0.8em;
 }
 
-.CodeMirror pre.HyperMD-header-5, .markdown-preview-view h5
+.CodeMirror pre.cm-header-5, .markdown-preview-view h5
 {
   font-family: var(--font-family-header);
   font-size: var(--font-size-h5);
@@ -369,7 +369,7 @@ img:hover {
   margin-top: 0.7em;
 }
 
-.CodeMirror pre.HyperMD-header-6, .markdown-preview-view h6
+.CodeMirror pre.cm-header-6, .markdown-preview-view h6
 {
   font-family: var(--font-family-header);
   font-size: var(--font-size-h6);
